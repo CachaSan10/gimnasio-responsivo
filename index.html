@@ -1,14 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <title>index</title>
-</head>
-<body>
-<h1 class="alert alert-danger">hola mundo</h1>
+<html lang="es">
 
-<script src="js/bootstrap/bootstrap.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/personalizado/header.css">
+  <link rel="stylesheet" href="css/personalizado/index.css">
+  <title>index</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <!--Menu y sub-menu-->
+    <header>
+      <nav class="navbar navbar-dark bg-dark border-bottom border-body navbar-expand-lg ">
+        <div class="container-fluid">
+          <div class="col-5">
+            <a class="navbar-brand" href="#">FITTNES PARK</a>
+          </div>
+          <div class="col-7">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="/pages/clases.html" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Clases
+                  </a>
+                  <ul class="dropdown-menu sub-menu">
+                    <div class="row align-content-center">
+                      <div class="col">
+                        <h3>Clases</h3>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+
+                        <li><a class="dropdown-item" href="#">Yoga</a></li>
+                        <li><a class="dropdown-item" href="#">Pilates</a></li>
+                        <li><a class="dropdown-item" href="#">CrossFit</a></li>
+                        <li><a class="dropdown-item" href="#">Spinning</a></li>
+                        <li><a class="dropdown-item" href="#">Zumba</a></li>
+                      </div>
+                      <div class="col">
+                        <h3>Niveles</h3>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+
+                        <li><a class="dropdown-item" href="#">Principiantes</a></li>
+                        <li><a class="dropdown-item" href="#">Intermedios</a></li>
+                        <li><a class="dropdown-item" href="#">Avanzados</a></li>
+                        <li><a class="dropdown-item" href="#">Personalizado</a></li>
+
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="pages/entrenadores.html" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Entrenadores
+                  </a>
+                  <ul class="dropdown-menu">
+                    <div class="row align-content-center sub-menu">
+                      <div class="col">
+                        <h3>Nuestro Equipo</h3>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+
+                        <li><a class="dropdown-item" href="#">Todos los entrenadores</a></li>
+                        <li><a class="dropdown-item" href="#">Especialistas en fuerza</a></li>
+                        <li><a class="dropdown-item" href="#">Entrenadores cardiovasculares</a></li>
+                        <li><a class="dropdown-item" href="#">Expertos en nutrición</a></li>
+                      </div>
+                      <div class="col">
+                        <h3>Entrenamiento Personal</h3>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+
+                        <li><a class="dropdown-item" href="#">Sesiones individuales</a></li>
+                        <li><a class="dropdown-item" href="#">Planes a medida</a></li>
+                        <li><a class="dropdown-item" href="#">Seguimiento online</a></li>
+                        <li><a class="dropdown-item" href="#">Evaluación física</a></li>
+
+                      </div>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="pages/precios.html" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Precios
+                  </a>
+                  <ul class="dropdown-menu">
+                    <div>
+                      <h3>Membresías</h3>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+
+                      <li><a class="dropdown-item" href="#">Básica</a></li>
+                      <li><a class="dropdown-item" href="#">Estándar</a></li>
+                      <li><a class="dropdown-item" href="#">Premium</a></li>
+
+                    </div>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="pages/blog.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <!--Seccion de clases destacadas-->
+    <Section>
+      <h1>Clases Destacadas</h1>
+      <!--Card de las clases destacadas-->
+      <div class="container">
+        <div class="row row-cols-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/crossfit.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="badge text-bg-info">CROSSFIT</h3>
+              <p class="card-text">Entrenamiento funcional de alta intensidad que combina levantamiento de pesas,
+                ejercicios cardiovasculares y movimientos gimnásticos.</p>
+              <div class=" row card-footer text-body-secondary">
+                <div class="col-6">
+                  60 min
+                </div>
+                <div class="col-6">
+                  Avanzado
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="img/crossfit.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="badge text-bg-info">CROSSFIT</h3>
+              <p class="card-text">Entrenamiento funcional de alta intensidad que combina levantamiento de pesas,
+                ejercicios cardiovasculares y movimientos gimnásticos.</p>
+              <div class=" row card-footer text-body-secondary">
+                <div class="col-6">
+                  60 min
+                </div>
+                <div class="col-6">
+                  Avanzado
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="img/crossfit.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="badge text-bg-info">CROSSFIT</h3>
+              <p class="card-text">Entrenamiento funcional de alta intensidad que combina levantamiento de pesas,
+                ejercicios cardiovasculares y movimientos gimnásticos.</p>
+              <div class=" row card-footer text-body-secondary">
+                <div class="col-6">
+                  60 min
+                </div>
+                <div class="col-6">
+                  Avanzado
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </Section>
+
+    <footer>
+
+      
+    </footer>
+
+
+  </div>
+
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
