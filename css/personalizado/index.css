@@ -1,0 +1,96 @@
+:root {
+    --primary: #FF6B6B;
+    --secondary: #4ECDC4;
+    --dark: #292F36;
+    --light: #c0ffaa;
+    --accent: #FFE66D;
+    --testimonio: #f54d4d;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--primary);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+
+
+.card {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px var(--primary);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, var(--accent) 100%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: 1;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.testimonios {
+    margin-top: 40px;
+    
+}
+
+.testimonio-card {
+    background-color: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonio-imagen {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+}
+
+.info-autor {
+    margin-top: 0.3rem;
+}
+
+.info-autor h4{
+    display: inline-block;
+    font-size: 1.3rem;
+
+
+}
+
+.info-autor h5{
+    color: var(--testimonio);
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.testimonio-texto {
+    font-style: italic;
+    margin-bottom: 10px;
+}

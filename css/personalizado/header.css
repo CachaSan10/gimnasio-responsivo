@@ -1,0 +1,13 @@
+
+
+.sub-menu {
+    min-width: 550px;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: #f0c14b;
+}
