@@ -1,177 +1,492 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/bootstrap/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../css/personalizado/header.css">
-    <link rel="stylesheet" href="../css/personalizado/footer.css">
-    <title>Clases</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../css/personalizado/header.css">
+  <link rel="stylesheet" href="../css/personalizado/footer.css">
+  <link rel="stylesheet" href="../css/personalizado/clases.css">
+  <title>Clases</title>
 </head>
+
 <body>
-   
-    <div class="container">
-        <!--Menu y sub-menu-->
-        <header>
-            <nav class="navbar navbar-dark bg-dark border-bottom border-body navbar-expand-lg">
-              <div class="container-fluid">
-                <a class="navbar-brand col-5 col-lg-auto" href="#">FITTNES PARK</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse col-7" id="navbarSupportedContent">
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-          
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" aria-current="page" href="clases.html" role="button"
-                        aria-expanded="true">
-                        Clases
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <h6 class="dropdown-header">Clases</h6>
-                        </li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Yoga</a></li>
-                        <li><a class="dropdown-item" href="#">Pilates</a></li>
-                        <li><a class="dropdown-item" href="#">CrossFit</a></li>
-                        <li><a class="dropdown-item" href="#">Spinning</a></li>
-                        <li><a class="dropdown-item" href="#">Zumba</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li>
-                          <h6 class="dropdown-header">Niveles</h6>
-                        </li>
-                        <li><a class="dropdown-item" href="#">Principiantes</a></li>
-                        <li><a class="dropdown-item" href="#">Intermedios</a></li>
-                        <li><a class="dropdown-item" href="#">Avanzados</a></li>
-                        <li><a class="dropdown-item" href="#">Personalizado</a></li>
-                      </ul>
-                    </li>
-          
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="entrenadores.html" role="button"
-                         aria-expanded="false">
-                        Entrenadores
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <h6 class="dropdown-header">Nuestro Equipo</h6>
-                        </li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Todos los entrenadores</a></li>
-                        <li><a class="dropdown-item" href="#">Especialistas en fuerza</a></li>
-                        <li><a class="dropdown-item" href="#">Entrenadores cardiovasculares</a></li>
-                        <li><a class="dropdown-item" href="#">Expertos en nutrición</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li>
-                          <h6 class="dropdown-header">Entrenamiento Personal</h6>
-                        </li>
-                        <li><a class="dropdown-item" href="#">Sesiones individuales</a></li>
-                        <li><a class="dropdown-item" href="#">Planes a medida</a></li>
-                        <li><a class="dropdown-item" href="#">Seguimiento online</a></li>
-                        <li><a class="dropdown-item" href="#">Evaluación física</a></li>
-                      </ul>
-                    </li>
-          
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="precios.html" role="button" 
-                        aria-expanded="false">
-                        Precios
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <h6 class="dropdown-header">Membresías</h6>
-                        </li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Básica</a></li>
-                        <li><a class="dropdown-item" href="#">Estándar</a></li>
-                        <li><a class="dropdown-item" href="#">Premium</a></li>
-                      </ul>
-                    </li>
-          
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
-                    </li>
-          
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
-                    </li>
-                  </ul>
+
+  <div class="container">
+    <!--Menu y sub-menu-->
+    <header>
+      <nav class="navbar navbar-dark bg-dark border-bottom border-body navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand col-5 col-lg-auto" href="#">FITTNES PARK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse col-7" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" aria-current="page" href="clases.html" role="button"
+                  aria-expanded="true">
+                  Clases
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <h6 class="dropdown-header">Clases</h6>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Yoga</a></li>
+                  <li><a class="dropdown-item" href="#">Pilates</a></li>
+                  <li><a class="dropdown-item" href="#">CrossFit</a></li>
+                  <li><a class="dropdown-item" href="#">Spinning</a></li>
+                  <li><a class="dropdown-item" href="#">Zumba</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <h6 class="dropdown-header">Niveles</h6>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Principiantes</a></li>
+                  <li><a class="dropdown-item" href="#">Intermedios</a></li>
+                  <li><a class="dropdown-item" href="#">Avanzados</a></li>
+                  <li><a class="dropdown-item" href="#">Personalizado</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="entrenadores.html" role="button" aria-expanded="false">
+                  Entrenadores
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <h6 class="dropdown-header">Nuestro Equipo</h6>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Todos los entrenadores</a></li>
+                  <li><a class="dropdown-item" href="#">Especialistas en fuerza</a></li>
+                  <li><a class="dropdown-item" href="#">Entrenadores cardiovasculares</a></li>
+                  <li><a class="dropdown-item" href="#">Expertos en nutrición</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <h6 class="dropdown-header">Entrenamiento Personal</h6>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Sesiones individuales</a></li>
+                  <li><a class="dropdown-item" href="#">Planes a medida</a></li>
+                  <li><a class="dropdown-item" href="#">Seguimiento online</a></li>
+                  <li><a class="dropdown-item" href="#">Evaluación física</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="precios.html" role="button" aria-expanded="false">
+                  Precios
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <h6 class="dropdown-header">Membresías</h6>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Básica</a></li>
+                  <li><a class="dropdown-item" href="#">Estándar</a></li>
+                  <li><a class="dropdown-item" href="#">Premium</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Seccion de clases  -->
+    <section class="galeria-clases">
+      <h1>Filtrar por Categoria</h1>
+      <div class="container">
+        <div class="filter-buttons mb-3">
+          <button class="btn btn-outline-primary btn-sm filter-button" data-filter="all">Todas</button>
+          <button class="btn btn-outline-primary btn-sm filter-button" data-filter="Crossfit">Crossfit</button>
+          <button class="btn btn-outline-primary btn-sm filter-button" data-filter="Pilates">Pilates</button>
+          <button class="btn btn-outline-primary btn-sm filter-button" data-filter="Yoga">Yoga</button>
+          <button class="btn btn-outline-primary btn-sm filter-button" data-filter="Zumba">Zumba</button>
+          <button class="btn btn-outline-primary btn-sm filter-button" data-filter="Spinning">Spinning</button>
+        </div>
+        <div class="masonry-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+          <div class="col item" data-category="Crossfit">
+            <div class="card card-masonry item-with-overlay">
+              <div class="card-image-wrapper">
+                <img src="../img/clases/crossfit-1.webp" class="card-img-top" alt="Imagen 1">
+                <div class="card-body">
+                  <span class="badge bg-warning">Crossfit</span>
+                  <h5 class="card-title">Desafía tus Límites con CrossFit</h5>
+                  <p class="card-text">Prepárate para superar tus propias expectativas a través de una combinación
+                    dinámica de movimientos funcionales, fuerza y resistencia, forjando un cuerpo capaz y un espíritu
+                    resiliente.</p>
                 </div>
               </div>
-            </nav>
-          </header>
-    
-    
-        <!--Footer de la pagina web-->
-        <footer class="bg-dark texto-footer py-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h5 class="mb-3">Suscríbete a nuestro Newsletter</h5>
-                        <p>Recibe las últimas noticias y actualizaciones directamente en tu bandeja de entrada.</p>
-                        
-      
-                        <form id="newsletterForm" class="d-flex">
-                          <input type="email" class="form-control form-control-sm me-2" placeholder="Tu correo electrónico" required>
-                          <button type="submit" class="btn btn-primary btn-sm">Suscribir</button>
-                          <div id="spinner-container" class="ms-2" style="display: none;">
-                              <div class="spinner-border spinner-border-sm text-light" role="status">
-                                  <span class="visually-hidden">Cargando...</span>
-                              </div>
-                          </div>
-                          <div id="mensaje-suscripcion" class="ms-2 text-success" style="display: none;">
-                              ¡Suscripción exitosa!
-                          </div>
-                      </form>
-                    </div>
-                    <div class="col-md-4">
-                        <h5 class="mb-3">Síguenos en Redes Sociales</h5>
-                        <ul class="list-unstyled d-flex justify-content-center">
-                            <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-facebook fs-4"></i></a></li>
-                            <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-twitter fs-4"></i></a></li>
-                            <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-instagram fs-4"></i></a></li>
-                            <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-linkedin fs-4"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h5 class="mb-3">Ubicación</h5>
-                        <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.2043152548918!2d-58.78885506142281!3d-34.644381793234935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9525fcbe8dd3%3A0xcc8ca2fdcd2a9b41!2sFitness%20Park%20Gym!5e0!3m2!1ses!2sar!4v1743893452495!5m2!1ses!2sar"
-                        width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <hr class="text-light mt-4">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p>&copy; 2025 FITTNES PARK. Todos los derechos reservados.</p>
-                    </div>
-                </div>
+              <div class="overlay">
+                <p>Nivel: Todos</p>
+                <p>Duración: 45 min</p>
+                <p>Quema hasta 500 calorías con música motivadora.</p>
+              </div>
             </div>
-        </footer>
+          </div>
+          <div class="col item" data-category="Pilates">
+            <div class="card card-masonry item-with-overlay">
+              <div class="card-image-wrapper">
+                <img src="../img/clases/pilates-1.jpeg" class="card-img-top" alt="Imagen 2"
+                  style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                  <span class="badge bg-warning">Pilates</span>
+
+                  <h5 class="card-title">Fortalece tu Centro y Mejora tu Postura con Pilates</h5>
+                  <p class="card-text">El Pilates fortalece los músculos estabilizadores con ejercicios controlados, mejorando la postura, aliviando tensiones y previniendo dolores por mala alineación.</p>
+                </div>
+              </div>
+              <div class="overlay">
+                <p>Nivel: Avanzado</p>
+                <p>Duración: 60 min</p>
+                <p>Ejercicios de alta intensidad para fortalecer el core.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col item" data-category="Yoga">
+            <div class="card card-masonry item-with-overlay">
+              <div class="card-image-wrapper">
+                <img src="../img/clases/yoga-1.jpeg" class="card-img-top" alt="Imagen 3">
+                <div class="card-body">
+                  <span class="badge bg-warning">Yoga</span>
+
+                  <h5 class="card-title">Flexibilidad, Fuerza y Paz Mental</h5>
+                  <p class="card-text">El movimiento articular y el fortalecimiento muscular liberan la tensión física. La respiración consciente y la conexión corporal inducen calma interior y serenidad mental.</p>
+                </div>
+              </div>
+              <div class="overlay">
+                <p>Nivel: Principiante</p>
+                <p>Duración: 75 min</p>
+                <p>Clase suave para conectar cuerpo y mente.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col item" data-category="Crossfit">
+            <div class="card card-masonry item-with-overlay">
+              <div class="card-image-wrapper">
+                <img src="../img/clases/crossfit-2.jpg" class="card-img-top" alt="Imagen 4"
+                  style="height: 150px; object-fit: cover;">
+                <div class="card-body">
+                  <span class="badge bg-warning">Crossfit</span>
+
+                  <h5 class="card-title">Entrenamiento de Alta Intensidad</h5>
+                  <p class="card-text">Esta metodología de entrenamiento busca generar adaptaciones físicas rápidas y significativas, mejorando eficientemente la resistencia, fuerza y potencia. Prepárate para desafiar tu cuerpo y lograr resultados notables en menos tiempo.</p>
+                </div>
+              </div>
+              <div class="overlay">
+                <p>Nivel: Avanzado</p>
+                <p>Duración: 90 min</p>
+                <p>Preparación para competiciones de CrossFit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col item" data-category="Zumba">
+            <div class="card card-masonry item-with-overlay">
+              <div class="card-image-wrapper">
+                <img src="../img/clases/zumba-1.jpeg" class="card-img-top" alt="Imagen 5">
+                <div class="card-body">
+                  <span class="badge bg-warning">Zumba</span>
+
+                  <h5 class="card-title">¡La Fiesta Fitness que te Engancha!</h5>
+                  <p class="card-text"> Deja atrás el ejercicio aburrido y sumérgete en una experiencia activa, vibrante y llena de ritmo. Esta propuesta te invita a disfrutar de cada movimiento al son de la música, logrando ponerte en forma de manera emocionante y motivadora, ¡para que siempre quieras volver!</p>
+                </div>
+              </div>
+              <div class="overlay">
+                <p>Nivel: Intermedio</p>
+                <p>Duración: 60 min</p>
+                <p>Zumba con pesas ligeras para tonificar.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col item" data-category="Pilates">
+            <div class="card card-masonry item-with-overlay">
+              <div class="card-image-wrapper">
+                <img src="../img/clases/pilates-2.jpg" class="card-img-top" alt="Imagen 6"
+                  style="height: 180px; object-fit: cover;">
+                <div class="card-body">
+                  <span class="badge bg-warning">Pilates</span>
+
+                  <h5 class="card-title">Rehabilita, Fortalece y Define con el Método Pilates</h5>
+                  <p class="card-text"> A través de sus movimientos conscientes y controlados, el Pilates se erige como
+                    un camino efectivo para la rehabilitación de lesiones, el fortalecimiento profundo de la
+                    musculatura, especialmente el core, y la definición de la figura, promoviendo un cuerpo más
+                    equilibrado, resistente y estéticamente armonioso.</p>
+
+                </div>
+              </div>
+              <div class="overlay">
+
+                <p>Nivel: Intermedio</p>
+                <p>Duración: 50 min</p>
+                <p>Clase de Pilates utilizando el reformer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col item" data-category="Yoga">
+            <div class="card card-masonry item-with-overlay">
+              <div class="card-image-wrapper">
+                <img src="../img/clases/yoga-2.avif" class="card-img-top" alt="Imagen 7">
+                <div class="card-body">
+                  <span class="badge bg-warning">Yoga</span>
+
+                  <h5 class="card-title">Encuentra tu Equilibrio Interior y Exterior</h5>
+                  <p class="card-text">Busca la armonía que abarca tanto la serenidad mental y emocional (el equilibrio
+                    interior) como la salud física y la estabilidad corporal (el equilibrio exterior). Descubre cómo
+                    conectar estas dos dimensiones para alcanzar una vida más plena y centrada.</p>
+                </div>
+              </div>
+              <div class="overlay">
+                <p>Nivel: Intermedio</p>
+                <p>Duración: 60 min</p>
+                <p>Secuencias dinámicas de posturas y respiración.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col item" data-category="Spinning">
+            <div class="card card-masonry item-with-overlay">
+              <div class="card-image-wrapper">
+                <img src="../img/clases/spinning-1.jpg" class="card-img-top" alt="Imagen 8"
+                  style="height: 120px; object-fit: cover;">
+                <div class="card-body">
+                  <span class="badge bg-warning">Spinning</span>
+
+                  <h5 class="card-title">Desafía tus Límites en Cada Pedalada</h5>
+                  <p class="card-text">Cada movimiento del pedal se convierte en una oportunidad para probar tu
+                    resistencia, aumentar tu fuerza y descubrir hasta dónde puedes llegar, tanto en entrenamientos
+                    intensos como en emocionantes recorridos. Prepárate para sentir la adrenalina de la superación en
+                    cada kilómetro.</p>
+                </div>
+              </div>
+              <div class="overlay">
+                <p>Nivel: Intermedio/Avanzado</p>
+                <p>Duración: 45 min</p>
+                <p>Entrenamiento de intervalos de alta intensidad en bicicleta.</p>
+              </div>
+            </div>
+          </div>
         </div>
-    
-    
-    
-        <script src="../js/bootstrap/bootstrap.min.js"></script>
-        <script src="../js/jquery/jquery-3.7.1.min.js"></script>
-      <script src="../js/jquery/personalizado/desplegar-menu.js"> </script>
-      <script src="js/jquery/personalizado/spinner-newsletter.js"></script>
+      </div>
+    </section>
+    <!--Seccion de tabla de de los horarios-->
+    <section class="tabla-horarios">
+      <h1>Horarios Semanales</h1>
+      <div class="table-responsive-md ">
+        <table class="table table-bordered border-secondary  text-center ">
+          <thead class="table-warning">
+            <tr>
+              <th>Hora</th>
+
+              <th>Lunes</th>
+              <th>Martes</th>
+              <th>Miércoles</th>
+              <th>Jueves</th>
+              <th>Viernes</th>
+              <th>Sábado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>8:00</td>
+
+              <td>
+                <div class="color-celda yoga">Yoga Matutino</div>
+              </td>
+              <td></td>
+              <td>
+                <div class="color-celda yoga">Yoga Matutino</div>
+              </td>
+              <td></td>
+              <td>
+                <div class="color-celda yoga">Yoga Matutino</div>
+              </td>
+              <td>
+                <div class="color-celda pilates">Pilates</div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>9:00</td>
+
+              <td>
+                <div class="color-celda crossfit">CrossFit</div>
+              </td>
+              <td>
+                <div class="color-celda crossfit">CrossFit</div>
+              </td>
+              <td>
+                <div class="color-celda spinning">Spinning</div>
+              </td>
+              <td>
+                <div class="color-celda crossfit">CrossFit</div>
+              </td>
+              <td>
+                <div class="color-celda zumba">Zumba</div>
+              </td>
+              <td>
+                <div class="color-celda yoga">Yoga Weekend</div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>12:00</td>
+
+              <td>
+                <div class="color-celda spinning">Spinning</div>
+              </td>
+              <td>
+                <div class="color-celda yoga">Yoga Mediodia</div>
+              </td>
+              <td>
+                <div class="color-celda spinning">Spinning</div>
+              </td>
+              <td>
+                <div class="color-celda yoga">Yoga Mediodia</div>
+              </td>
+              <td>
+                <div class="color-celda spinning">Spinning</div>
+              </td>
+              <td>
+                <div class="color-celda zumba">Zumba</div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>18:00</td>
+
+              <td>
+                <div class="color-celda crossfit">CrossFit</div>
+              </td>
+              <td>
+                <div class="color-celda zumba">Zumba</div>
+              </td>
+              <td>
+                <div class="color-celda pilates">Pilates</div>
+              </td>
+              <td>
+                <div class="color-celda zumba">Zumba</div>
+              </td>
+              <td>
+                <div class="color-celda crossfit">CrossFit</div>
+              </td>
+              <td>
+                <div class="color-celda pilates">Pilates</div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>20:00</td>
+
+              <td>
+                <div class="color-celda pilates">Pilates Night</div>
+              </td>
+              <td>
+                <div class="color-celda spinning">Spinning Night</div>
+              </td>
+              <td>
+                <div class="color-celda yoga">Yoga Night</div>
+              </td>
+              <td>
+                <div class="color-celda spinning">Spinning Night</div>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+
+
+
+
+    <!--Footer de la pagina web-->
+    <footer class="bg-dark texto-footer py-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="mb-3">Suscríbete a nuestro Newsletter</h5>
+            <p>Recibe las últimas noticias y actualizaciones directamente en tu bandeja de entrada.</p>
+
+
+            <form id="newsletterForm" class="d-flex">
+              <input type="email" class="form-control form-control-sm me-2" placeholder="Tu correo electrónico"
+                required>
+              <button type="submit" class="btn btn-primary btn-sm">Suscribir</button>
+              <div id="spinner-container" class="ms-2" style="display: none;">
+                <div class="spinner-border spinner-border-sm text-light" role="status">
+                  <span class="visually-hidden">Cargando...</span>
+                </div>
+              </div>
+              <div id="mensaje-suscripcion" class="ms-2 text-success" style="display: none;">
+                ¡Suscripción exitosa!
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-3">Síguenos en Redes Sociales</h5>
+            <ul class="list-unstyled d-flex justify-content-center">
+              <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-facebook fs-4"></i></a></li>
+              <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-twitter fs-4"></i></a></li>
+              <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-instagram fs-4"></i></a></li>
+              <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-linkedin fs-4"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-3">Ubicación</h5>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.2043152548918!2d-58.78885506142281!3d-34.644381793234935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9525fcbe8dd3%3A0xcc8ca2fdcd2a9b41!2sFitness%20Park%20Gym!5e0!3m2!1ses!2sar!4v1743893452495!5m2!1ses!2sar"
+              width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <hr class="text-light mt-4">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2025 FITTNES PARK. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script src="../js/bootstrap/bootstrap.min.js"></script>
+  <script src="../js/jquery/jquery-3.7.1.min.js"></script>
+  <script src="../js/jquery/personalizado/desplegar-menu.js"> </script>
+  <script src="js/jquery/personalizado/spinner-newsletter.js"></script>
+  <script src="../js/jquery/personalizado/mansory.js"></script>
+  <script src="../js/jquery/personalizado/overlay.js"></script>
+  <script src="../js/jquery/personalizado/filtrar-clase-categoria.js"></script>
 </body>
+
 </html>
