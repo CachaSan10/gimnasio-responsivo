@@ -2,8 +2,9 @@
     --primary: #FF6B6B;
     --secondary: #4ECDC4;
     --dark: #292F36;
-    --light: #F7FFF7;
+    --light: #c0ffaa;
     --accent: #FFE66D;
+    --testimonio: #f54d4d;
 }
 
 h1 {
@@ -26,6 +27,7 @@ h1::after {
 
 .card {
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 .card:hover {
@@ -48,4 +50,47 @@ h1::after {
 
 .card:hover::before {
     opacity: 1;
+}
+
+.testimonios {
+    margin-top: 40px;
+    
+}
+
+.testimonio-card {
+    background-color: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonio-imagen {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+}
+
+.info-autor {
+    margin-top: 0.3rem;
+}
+
+.info-autor h4{
+    display: inline-block;
+    font-size: 1.3rem;
+
+
+}
+
+.info-autor h5{
+    color: var(--testimonio);
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.testimonio-texto {
+    font-style: italic;
+    margin-bottom: 10px;
 }

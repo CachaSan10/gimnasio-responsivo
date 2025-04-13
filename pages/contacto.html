@@ -3,10 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/personalizado/header.css">
+    <link rel="stylesheet" href="../css/personalizado/footer.css">
     <title>Contacto</title>
 </head>
 <body>
-    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <div class="container">
+        <!--Menu y sub-menu-->
+        <header>
+            <nav class="navbar navbar-dark bg-dark border-bottom border-body navbar-expand-lg">
+              <div class="container-fluid">
+                <a class="navbar-brand col-5 col-lg-auto" href="#">FITTNES PARK</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-7" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+          
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" aria-current="page" href="clases.html" role="button"
+                        aria-expanded="true">
+                        Clases
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <h6 class="dropdown-header">Clases</h6>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Yoga</a></li>
+                        <li><a class="dropdown-item" href="#">Pilates</a></li>
+                        <li><a class="dropdown-item" href="#">CrossFit</a></li>
+                        <li><a class="dropdown-item" href="#">Spinning</a></li>
+                        <li><a class="dropdown-item" href="#">Zumba</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                          <h6 class="dropdown-header">Niveles</h6>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Principiantes</a></li>
+                        <li><a class="dropdown-item" href="#">Intermedios</a></li>
+                        <li><a class="dropdown-item" href="#">Avanzados</a></li>
+                        <li><a class="dropdown-item" href="#">Personalizado</a></li>
+                      </ul>
+                    </li>
+          
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="entrenadores.html" role="button"
+                         aria-expanded="false">
+                        Entrenadores
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <h6 class="dropdown-header">Nuestro Equipo</h6>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Todos los entrenadores</a></li>
+                        <li><a class="dropdown-item" href="#">Especialistas en fuerza</a></li>
+                        <li><a class="dropdown-item" href="#">Entrenadores cardiovasculares</a></li>
+                        <li><a class="dropdown-item" href="#">Expertos en nutrición</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                          <h6 class="dropdown-header">Entrenamiento Personal</h6>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sesiones individuales</a></li>
+                        <li><a class="dropdown-item" href="#">Planes a medida</a></li>
+                        <li><a class="dropdown-item" href="#">Seguimiento online</a></li>
+                        <li><a class="dropdown-item" href="#">Evaluación física</a></li>
+                      </ul>
+                    </li>
+          
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="precios.html" role="button" 
+                        aria-expanded="false">
+                        Precios
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <h6 class="dropdown-header">Membresías</h6>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Básica</a></li>
+                        <li><a class="dropdown-item" href="#">Estándar</a></li>
+                        <li><a class="dropdown-item" href="#">Premium</a></li>
+                      </ul>
+                    </li>
+          
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                    </li>
+          
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+    
+    
+        <!--Footer de la pagina web-->
+        <footer class="bg-dark texto-footer py-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="mb-3">Suscríbete a nuestro Newsletter</h5>
+                        <p>Recibe las últimas noticias y actualizaciones directamente en tu bandeja de entrada.</p>
+                        
+      
+                        <form id="newsletterForm" class="d-flex">
+                          <input type="email" class="form-control form-control-sm me-2" placeholder="Tu correo electrónico" required>
+                          <button type="submit" class="btn btn-primary btn-sm">Suscribir</button>
+                          <div id="spinner-container" class="ms-2" style="display: none;">
+                              <div class="spinner-border spinner-border-sm text-light" role="status">
+                                  <span class="visually-hidden">Cargando...</span>
+                              </div>
+                          </div>
+                          <div id="mensaje-suscripcion" class="ms-2 text-success" style="display: none;">
+                              ¡Suscripción exitosa!
+                          </div>
+                      </form>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="mb-3">Síguenos en Redes Sociales</h5>
+                        <ul class="list-unstyled d-flex justify-content-center">
+                            <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-facebook fs-4"></i></a></li>
+                            <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-twitter fs-4"></i></a></li>
+                            <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-instagram fs-4"></i></a></li>
+                            <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-linkedin fs-4"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="mb-3">Ubicación</h5>
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.2043152548918!2d-58.78885506142281!3d-34.644381793234935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9525fcbe8dd3%3A0xcc8ca2fdcd2a9b41!2sFitness%20Park%20Gym!5e0!3m2!1ses!2sar!4v1743893452495!5m2!1ses!2sar"
+                        width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <hr class="text-light mt-4">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>&copy; 2025 FITTNES PARK. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+    
+    
+    
+        <script src="../js/bootstrap/bootstrap.min.js"></script>
+        <script src="../js/jquery/jquery-3.7.1.min.js"></script>
+      <script src="../js/jquery/personalizado/desplegar-menu.js"> </script>
 </body>
 </html>
