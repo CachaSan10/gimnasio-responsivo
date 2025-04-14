@@ -1,0 +1,84 @@
+.galeria-clases{
+    margin-top:2rem;
+
+}
+
+.card-body span{
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.card-masonry {
+    width: 250px; 
+    margin-bottom: 20px;
+}
+
+
+
+
+  .item-with-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.837);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+  }
+
+  .item-with-overlay:hover .overlay {
+    opacity: 1;
+  }
+
+
+
+  .overlay p {
+    margin-bottom: 5px;
+  }
+
+/*Estilos de la tabla de horarios de clase*/
+
+.tabla-horarios{
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.color-celda.yoga{
+    background-color: #70e28f;
+    color: #000000;
+    
+}
+
+.color-celda.spinning{
+    background-color: #efe560;
+}
+
+.color-celda.zumba{
+    background-color: #f6a2f6;
+}
+
+.color-celda.crossfit{
+    background-color: #2cedd0;
+}
+.color-celda.pilates{
+    background-color: #bfc0e3;
+}
+
+
+.color-celda {
+    border: 1px solid #000000;
+    padding: 6px;
+    border-radius: 10px;   
+}
