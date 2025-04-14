@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/bootstrap/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/personalizado/header.css">
     <link rel="stylesheet" href="../css/personalizado/footer.css">
+    <link rel="stylesheet" href="../css/personalizado/precios.css">
     <title>Precios</title>
 </head>
 <body>
@@ -116,6 +117,90 @@
               </div>
             </nav>
           </header>
+
+          <!--Seccion de la tabla para comparar precios-->
+          <section>
+            <div class="container mt-5">
+              <h2>Comparativa de Membresías de Gimnasio</h2>
+              <p class="lead">Elige la membresía que mejor se adapte a tus necesidades y presupuesto.</p>
+          
+              <div class="form-check form-switch mb-3">
+                  <input class="form-check-input" type="checkbox" role="switch" id="precioToggle">
+                  <label class="form-check-label" for="precioToggle">Mostrar precios anuales</label>
+              </div>
+          
+              <table class="table table-bordered table-hover">
+                  <thead>
+                      <tr>
+                          <th scope="col">Característica</th>
+                          <th scope="col">Básica</th>
+                          <th scope="col">Estándar</th>
+                          <th scope="col">Premium</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row">Precio</th>
+                          <td data-precio-mensual="1500" data-precio-anual="16200"
+                              data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Precio mensual: $1500. Precio anual (10% descuento): $16200">$1500</td>
+                          <td data-precio-mensual="2500" data-precio-anual="27000"
+                              data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Precio mensual: $2500. Precio anual (10% descuento): $27000">$2500</td>
+                          <td data-precio-mensual="3500" data-precio-anual="37800"
+                              data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Precio mensual: $3500. Precio anual (10% descuento): $37800">$3500</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Acceso al Gimnasio</th>
+                          <td data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Acceso durante el horario regular del gimnasio.">Horario Regular</td>
+                          <td data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Acceso en un horario más amplio que la membresía básica.">Horario Extendido</td>
+                          <td data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Acceso al gimnasio las 24 horas del día, los 7 días de la semana.">24/7</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Clases Grupales</th>
+                          <td data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Las clases grupales no están incluidas en esta membresía.">No Incluidas</td>
+                          <td data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Se permite la asistencia a un máximo de 5 clases grupales por mes.">Acceso Limitado (5/mes)</td>
+                          <td data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Acceso ilimitado a todas las clases grupales ofrecidas.">Acceso Ilimitado</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Entrenamiento Personalizado</th>
+                          <td data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Las sesiones de entrenamiento personal están disponibles con un costo adicional.">Opcional (con costo extra)</td>
+                          <td data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Incluye una sesión de entrenamiento personal de cortesía cada mes.">1 Sesión al Mes</td>
+                          <td data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Incluye dos sesiones de entrenamiento personal de cortesía cada mes.">2 Sesiones al Mes</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Uso de Vestuarios y Duchas</th>
+                          <td data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Acceso a los vestuarios y duchas del gimnasio.">Sí</td>
+                          <td data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Acceso a los vestuarios y duchas del gimnasio.">Sí</td>
+                          <td data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Acceso a los vestuarios y duchas del gimnasio, con toallas proporcionadas.">Sí (Toallas Incluidas)</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Beneficios Adicionales</th>
+                          <td data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="No se incluyen beneficios adicionales en esta membresía.">-</td>
+                          <td data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Obtén descuentos en la compra de bebidas en el gimnasio.">Descuento en Bebidas</td>
+                          <td data-bs-toggle="tooltip" data-bs-placement="top"
+                              title="Obtén descuentos en bebidas y suplementos disponibles en el gimnasio.">Descuento en Bebidas y Suplementos</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          </section>
+
     
     
         <!--Footer de la pagina web-->
@@ -173,5 +258,6 @@
         <script src="../js/jquery/jquery-3.7.1.min.js"></script>
       <script src="../js/jquery/personalizado/desplegar-menu.js"> </script>
       <script src="js/jquery/personalizado/spinner-newsletter.js"></script>
+      <script src="../js/jquery/personalizado/cambiar-precio.js"></script>
 </body>
 </html>
