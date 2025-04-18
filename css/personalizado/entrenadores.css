@@ -4,7 +4,7 @@
     margin-bottom: 7%;
 }
 
-
+/*Imagen del entrenador */
 .imagen-entrenador {
     width: 13rem;
     height: auto;
@@ -15,6 +15,7 @@
     margin-top: 20px;
 }
 
+/*Texto de la especialidad de la card frontal */
 .card-texto-especialidad {
     font-size: 1.2rem;
     font-weight: bold;
@@ -33,7 +34,7 @@
     
 }
 
-
+/*Contenedor de las estrellas*/
 .rating-container {
     display: flex;
     align-items: center;
@@ -48,6 +49,7 @@
     display: none;
 }
 
+/*Estrellas*/
 .rating label {
     font-size: 1.5rem;
     color: #ccc;
@@ -55,30 +57,32 @@
     margin: 0 2px;
 }
 
+/*Estrellas al pasar el mouse*/
 .rating label:hover,
 .rating label:hover ~ label {
     color: gold;
 }
 
+/*Estrellas seleccionadas*/
 .rating input[type="radio"]:checked ~ label {
     color: gold;
 }
 
+/*Valor de las estrellas*/
 .rating-value {
     margin-left: 0.5rem;
     font-size: 1rem;
     color: #6c757d;
 }
 
-
-
+/*Titulo de la card frontal */
 .card-title {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-
+/*Flip de la card */
 .card-flip {
     perspective: 1000px;
 }
@@ -90,11 +94,12 @@
     transform-style: preserve-3d;
 }
 
+/*Flip de la card al pasar el mouse*/
 .card-flip:hover .card-inner {
     transform: rotateY(180deg);
 }
 
-
+/*Card frontal y card trasera */
 .card-front, 
 .card-back {
     position: absolute;
@@ -109,11 +114,13 @@
     border-radius: 0.25rem; /* Para que coincida con el borde de la card */
 }
 
+/*Card frontal */
 .card-front {
     background-color: #fff;
     color: #333;
 }
 
+/*Card trasera */
 .card-back {
     background-color: #383636;
     color: #ffffff;
@@ -121,27 +128,32 @@
     width: 100%;
 }
 
+/*Titulo de la card trasera */
 .card-back-entrenador {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 2px;
 }
 
+/*Descripcion de la card trasera */
 .card-back-descripcion {
     font-size: 1rem;
     margin-bottom: 10px;
 }
 
+/*Skill de la card trasera */
 .skill-item {
     margin-bottom: 10px;
 }
 
+/*Titulo de la skill de la card trasera */
 .card-back-titulo {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
+/*Label de la skill de la card trasera */
 .skill-label {
     font-size: 1rem;
     margin-bottom: 3px;
@@ -149,6 +161,7 @@
     display: block;
 }
 
+/*Barra de progreso de la skill de la card trasera */
 .progress {
     height: 1.4rem;
     width: 10rem;
@@ -156,10 +169,12 @@
 
 }
 
+/*Texto de la barra de progreso de la skill de la card trasera */
 .progress-bar {
     font-size: 0.9rem;
 }
 
+/*Frase de la card trasera */
 .card-back-frase {
     padding-left: 2rem;
     padding-right: 2rem;
