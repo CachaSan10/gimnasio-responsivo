@@ -1,0 +1,184 @@
+
+.seccion-entrenadores {
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+/*Imagen del entrenador */
+.imagen-entrenador {
+    width: 13rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f0c14b;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*Texto de la especialidad de la card frontal */
+.card-texto-especialidad {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f0c14b;
+}
+
+
+.card {
+    width: 16rem;
+    height: 25rem;
+    border: 2px solid #f0c14b;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0%;
+    
+}
+
+/*Contenedor de las estrellas*/
+.rating-container {
+    display: flex;
+    align-items: center;
+}
+
+.rating {
+    display: inline-flex;
+    flex-direction: row-reverse; /* Para que la estrella 5 esté a la izquierda*/ 
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+/*Estrellas*/
+.rating label {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+/*Estrellas al pasar el mouse*/
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
+}
+
+/*Estrellas seleccionadas*/
+.rating input[type="radio"]:checked ~ label {
+    color: gold;
+}
+
+/*Valor de las estrellas*/
+.rating-value {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/*Titulo de la card frontal */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*Flip de la card */
+.card-flip {
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+/*Flip de la card al pasar el mouse*/
+.card-flip:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+/*Card frontal y card trasera */
+.card-front, 
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.25rem; /* Para que coincida con el borde de la card */
+}
+
+/*Card frontal */
+.card-front {
+    background-color: #fff;
+    color: #333;
+}
+
+/*Card trasera */
+.card-back {
+    background-color: #383636;
+    color: #ffffff;
+    transform: rotateY(180deg);
+    width: 100%;
+}
+
+/*Titulo de la card trasera */
+.card-back-entrenador {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+/*Descripcion de la card trasera */
+.card-back-descripcion {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/*Skill de la card trasera */
+.skill-item {
+    margin-bottom: 10px;
+}
+
+/*Titulo de la skill de la card trasera */
+.card-back-titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*Label de la skill de la card trasera */
+.skill-label {
+    font-size: 1rem;
+    margin-bottom: 3px;
+    font-weight: bold;
+    display: block;
+}
+
+/*Barra de progreso de la skill de la card trasera */
+.progress {
+    height: 1.4rem;
+    width: 10rem;
+    border: #333 1px solid;
+
+}
+
+/*Texto de la barra de progreso de la skill de la card trasera */
+.progress-bar {
+    font-size: 0.9rem;
+}
+
+/*Frase de la card trasera */
+.card-back-frase {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+    margin-top: 15px;
+    font-style: italic;
+}

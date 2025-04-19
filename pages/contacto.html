@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/bootstrap/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/personalizado/header.css">
     <link rel="stylesheet" href="../css/personalizado/footer.css">
+    <link rel="stylesheet" href="../css/personalizado/contacto.css">
     <title>Contacto</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
         <header>
             <nav class="navbar navbar-dark bg-dark border-bottom border-body navbar-expand-lg">
               <div class="container-fluid">
-                <a class="navbar-brand col-5 col-lg-auto" href="#">FITTNES PARK</a>
+                <a class="navbar-brand col-5 col-lg-auto" href="../index.html">FITTNES PARK</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -23,7 +24,7 @@
                 <div class="collapse navbar-collapse col-7" id="navbarSupportedContent">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                      <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
           
                     <li class="nav-item dropdown">
@@ -115,7 +116,88 @@
               </div>
             </nav>
           </header>
+
+          <!--Seccion de formulario de contacto-->
+          <section>
+            <div class="container mt-5">
+              <h2>¡Contáctanos y Empieza tu Transformación!</h2>
+              <p class="lead">¿Tienes preguntas sobre nuestras membresías, clases o instalaciones? ¡No dudes en contactarnos!</p>
+              <!--Formulario de contacto-->
+              <form id="contactForm" class="needs-validation" novalidate>
+                  <!--Campo de nombre-->
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Nombre Completo*</label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" pattern="[A-Za-zÁ-ú\s]{3,50}" required>
+                      <div class="invalid-feedback">Por favor ingresa tu nombre completo (3-50 caracteres).</div>
+                  </div>
+                  <!--Campo de correo electronico-->
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Correo Electrónico*</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="tu@email.com" required>
+                      <div class="invalid-feedback">Por favor ingresa un correo electrónico válido.</div>
+                  </div>
+                  <!--Campo de telefono-->
+                  <div class="mb-3">
+                      <label for="phone" class="form-label">Teléfono*</label>
+                      <input type="tel" class="form-control" id="phone" name="phone" placeholder="Tu número de teléfono" pattern="[0-9]{9,15}" required>
+                      <div class="invalid-feedback">Por favor ingresa un número de teléfono válido (9-15 dígitos).</div>
+                  </div>
+                    <!--Campo de interes en membresia-->
+                  <div class="mb-3">
+                      <label for="membershipInterest" class="form-label">Interés en Membresía</label>
+                      <select class="form-select" id="membershipInterest" name="membershipInterest">
+                          <option value="" selected>Selecciona una opción (opcional)</option>
+                          <option value="basica">Básica</option>
+                          <option value="estandar">Estándar</option>
+                          <option value="premium">Premium</option>
+                      </select>
+                  </div>
+                  <!--Campo de mensaje-->
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Mensaje*</label>
+                      <textarea class="form-control" id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+                      <div class="invalid-feedback">Por favor ingresa tu mensaje.</div>
+                  </div>
+                  <!--Campo de aceptacion de terminos y condiciones-->
+                  <div class="form-check mb-3">
+                      <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                      <label class="form-check-label" for="terms">Acepto los <a href="#">términos y condiciones</a>*</label>
+                      <div class="invalid-feedback">Debes aceptar los términos y condiciones.</div>
+                  </div>
+                  <!--Boton de envio de mensaje-->
+                  <button type="submit" class="btn btn-primary" id="submitBtn">
+                      <i class="bi bi-send me-2"></i> Enviar Mensaje
+                      <span id="loadingSpinner" class="spinner-border spinner-border-sm  ms-2" role="status" aria-hidden="true"></span>
+
+                  </button>
+              </form>
+          </div>
+          <!--Modal de confirmacion de envio de mensaje-->
+          <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                      <div class="modal-header bg-success text-white">
+                          <h5 class="modal-title" id="confirmationModalLabel">¡Mensaje Enviado!</h5>
+                          <!--Boton de cerrar modal-->
+                          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                      </div>
+                      <!--Contenido del modal-->
+                      <div class="modal-body text-center">
+                          <i class="bi bi-check-circle-fill text-success" style="font-size: 2em;"></i>
+                          <p class="mt-3">Gracias por contactarnos. Recibimos tu mensaje y te responderemos a la brevedad.</p>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+      
+          </section>
     
+
+          
     
         <!--Footer de la pagina web-->
         <footer class="bg-dark texto-footer py-1">
@@ -171,5 +253,7 @@
         <script src="../js/bootstrap/bootstrap.min.js"></script>
         <script src="../js/jquery/jquery-3.7.1.min.js"></script>
       <script src="../js/jquery/personalizado/desplegar-menu.js"> </script>
+      <script src="../js/jquery/personalizado/spinner-newsletter.js"></script>
+      <script src="../js/jquery/personalizado/formulario-contacto.js"></script>
 </body>
 </html>

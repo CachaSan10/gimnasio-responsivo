@@ -21,9 +21,10 @@
     <header>
       <nav class="navbar navbar-dark bg-dark border-bottom border-body navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand col-5 col-lg-auto" href="#">FITTNES PARK</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand col-5 col-lg-auto" href="index.html">FITTNES PARK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse col-7" id="navbarSupportedContent">
@@ -31,10 +32,9 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
               </li>
-    
+
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="/pages/clases.html" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="/pages/clases.html" role="button" aria-expanded="false">
                   Clases
                 </a>
                 <ul class="dropdown-menu">
@@ -61,10 +61,9 @@
                   <li><a class="dropdown-item" href="#">Personalizado</a></li>
                 </ul>
               </li>
-    
+
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="pages/entrenadores.html" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="pages/entrenadores.html" role="button" aria-expanded="false">
                   Entrenadores
                 </a>
                 <ul class="dropdown-menu">
@@ -90,10 +89,9 @@
                   <li><a class="dropdown-item" href="#">Evaluación física</a></li>
                 </ul>
               </li>
-    
+
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="pages/precios.html" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="pages/precios.html" role="button" aria-expanded="false">
                   Precios
                 </a>
                 <ul class="dropdown-menu">
@@ -108,11 +106,11 @@
                   <li><a class="dropdown-item" href="#">Premium</a></li>
                 </ul>
               </li>
-    
+
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="pages/blog.html">Blog</a>
               </li>
-    
+
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="pages/contacto.html">Contacto</a>
               </li>
@@ -122,25 +120,41 @@
       </nav>
     </header>
 
-    
+    <!--Seccion de hero-->
+    <section class="hero">
+      <!--Video de fondo-->
+      <div id="video-background"></div>
+      <!--Contenido del hero-->
+      <div class="hero-content">
+        <!--Titulo del hero-->
+        <h1 id="hero-titulo">Supera tus límites</h1>
+        <!--Parrafo del hero-->
+        <p class="hero-parrafo">Únete a nuestra comunidad y transforma tu cuerpo y mente con nuestro programa de
+          entrenamiento motivacional</p>
+        <!--Boton del hero-->
+        <a href="pages/precios.html" class="cta-button">Empieza hoy</a>
+      </div>
+    </section>
+
     <!--Seccion de clases destacadas-->
     <Section>
       <h1>Clases Destacadas</h1>
       <!--Card de las clases destacadas-->
       <div class="container">
-        <div class="row row-cols-3">
+        <div class="row row-cols-3 justify-content-center">
+          <!--Card de la clase de crossfit-->
           <div class="card" style="width: 18rem;">
-            <img src="img/crossfit.avif" class="card-img-top" alt="...">
+            <img src="img/clases/crossfit-2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h3 class="badge text-bg-info">CROSSFIT</h3>
               <p class="card-text">Entrenamiento funcional de alta intensidad que combina levantamiento de pesas,
                 ejercicios cardiovasculares y movimientos gimnásticos.</p>
               <div class=" row card-footer text-body-secondary">
-                <div class="col-6">
-                  60 min
+                <div class="col-6 class-col-time">
+                  <span class="class-time">60 minutos</span>
                 </div>
-                <div class="col-6">
-                  Avanzado
+                <div class="col-6 class-col-difficulty">
+                  <span class="class-difficulty">Avanzado</span>
                 </div>
 
               </div>
@@ -149,41 +163,42 @@
 
           </div>
 
+          <!--Card de la clase de zumba-->
           <div class="card" style="width: 18rem;">
-            <img src="img/crossfit.avif" class="card-img-top" alt="...">
+            <img src="img/blog/zumba.avif" class="card-img-top" alt="Clase de Zumba">
             <div class="card-body">
-              <h3 class="badge text-bg-info">CROSSFIT</h3>
-              <p class="card-text">Entrenamiento funcional de alta intensidad que combina levantamiento de pesas,
-                ejercicios cardiovasculares y movimientos gimnásticos.</p>
-              <div class=" row card-footer text-body-secondary">
-                <div class="col-6">
-                  60 min
+              <h3 class="badge text-bg-info">ZUMBA</h3>
+              <p class="card-text">Clase de baile fitness que combina ritmos latinos e internacionales. ¡Ejercicio
+                divertido y energizante para todas las edades!</p>
+              <div class="row card-footer text-body-secondary">
+                <div class="col-6 class-col-time">
+                  <span class="class-time">60 minutos</span>
                 </div>
-                <div class="col-6">
-                  Avanzado
+                <div class="col-6 class-col-difficulty">
+                  <span class="class-difficulty">Intermedio</span>
                 </div>
-
               </div>
             </div>
           </div>
 
+          <!--Card de la clase de yoga-->
           <div class="card" style="width: 18rem;">
-            <img src="img/crossfit.avif" class="card-img-top" alt="...">
+            <img src="img/clases/yoga-1.jpeg" class="card-img-top" alt="Clase de Yoga">
             <div class="card-body">
-              <h3 class="badge text-bg-info">CROSSFIT</h3>
-              <p class="card-text">Entrenamiento funcional de alta intensidad que combina levantamiento de pesas,
-                ejercicios cardiovasculares y movimientos gimnásticos.</p>
-              <div class=" row card-footer text-body-secondary">
-                <div class="col-6">
-                  60 min
+              <h3 class="badge text-bg-info">YOGA</h3>
+              <p class="card-text">Práctica física, mental y espiritual que mejora la flexibilidad, la fuerza, el
+                equilibrio y reduce el estrés a través de posturas, respiración y meditación.</p>
+              <div class="row card-footer text-body-secondary">
+                <div class="col-6 class-col-time">
+                  <span class="class-time">75 minutos</span>
                 </div>
-                <div class="col-6">
-                  Avanzado
+                <div class="col-6 class-col-difficulty">
+                  <span class="class-difficulty">Todos los niveles</span>
                 </div>
-
               </div>
             </div>
           </div>
+
         </div>
 
 
@@ -191,118 +206,176 @@
 
     </Section>
 
+    <!--Seccion de estadisticas-->
+    <section>
+      <h1>Estadísticas</h1>
+      <div class="container mt-5 justify-content-center">
+        <div class="row row-cols-xl-4 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 ">
+          <!--Card de los miembros totales-->
+          <div class="col-md-4 mb-4">
+            <div class="stat-card">
+              <div class="stat-icon">🏋️</div>
+              <div id="total-members" class="stat-value">0</div>
+              <div class="stat-label">Miembros Totales</div>
+            </div>
+          </div>
+          <!--Card de los miembros activos-->
+          <div class="col-md-4 mb-4">
+            <div class="stat-card">
+              <div class="stat-icon">🏃</div>
+              <div id="active-members" class="stat-value">0</div>
+              <div class="stat-label">Miembros Activos</div>
+            </div>
+          </div>
+          <!--Card de los objetivos cumplidos-->
+          <div class="col-md-4 mb-4">
+            <div class="stat-card">
+              <div class="stat-icon">💪</div>
+              <div id="average-objetives" class="stat-value">0%</div>
+              <div class="stat-label">% de objetivos cumplidos</div>
+            </div>
+          </div>
+          <!--Card de las visitas promedio semanales-->
+          <div class="col-md-4 mb-4">
+            <div class="stat-card">
+              <div class="stat-icon">⏱️</div>
+              <div id="average-visits" class="stat-value">0</div>
+              <div class="stat-label">Visitas Promedio Semanales</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--Seccion de Testimonios-->
     <section class="testimonios">
-      <h1>Testimonios</h1>
+      <!--Titulo de la seccion de testimonios-->
+      <h1>Testimonios</h1>  
+      <!--Contenedor de los testimonios-->
       <div class="container mt-5">
+        <!--Carrousel de los testimonios-->
         <div id="carouselExampleIndicators" class="carousel slide">
+          <!--Indicadores del carrousel-->
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <!--Boton del carrousel-->
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
           </div>
+          <!--Contenedor de los testimonios-->
           <div class="carousel-inner">
+            <!--Testimonio 1-->
             <div class="carousel-item active">
               <div class="testimonio-card">
                 <img src="img/testimonio/maria-gonzalez.jpg" class="testimonio-imagen" alt="...">
-                <div class="info-autor">               
-                   <h4 >María González - </h4>
-                   <h5>Miembro desde 2020</h5>
+                <div class="info-autor">
+                  <h4>María González - </h4>
+                  <h5>Miembro desde 2020</h5>
                 </div>
-                <p class="testimonio-texto">"Desde que me uní a FITNESS PARK, mi vida ha cambiado completamente. Los entrenadores son profesionales y el
+                <p class="testimonio-texto">"Desde que me uní a FITNESS PARK, mi vida ha cambiado completamente. Los
+                  entrenadores son profesionales y el
                   ambiente es motivador. He perdido 15 kg en 3 meses y me siento mejor que nunca."</p>
-                  
+
               </div>
             </div>
+            <!--Testimonio 2-->
             <div class="carousel-item">
               <div class="testimonio-card">
                 <img src="img/testimonio/carlos-mendoza.jpg" class="testimonio-imagen" alt="...">
-                <div class="info-autor">               
-                  <h4 >Carlos Mendoza - </h4>
+                <div class="info-autor">
+                  <h4>Carlos Mendoza - </h4>
                   <h5>Miembro desde 2022</h5>
-               </div>
-                
-                <p class="testimonio-texto">"El mejor gimnasio al que he asistido. Las instalaciones son modernas y limpias, y la variedad de clases es
+                </div>
+
+                <p class="testimonio-texto">"El mejor gimnasio al que he asistido. Las instalaciones son modernas y
+                  limpias, y la variedad de clases es
                   impresionante. El entrenamiento personalizado me ayudó a superar mi meseta."</p>
-                  
+
               </div>
             </div>
+              <!--Testimonio 3-->
             <div class="carousel-item">
               <div class="testimonio-card">
                 <img src="img/testimonio/ana-rodriguez.jpg" class="testimonio-imagen" alt="...">
-                <div class="info-autor">               
-                  <h4 >Ana Rodríguez - </h4>
+                <div class="info-autor">
+                  <h4>Ana Rodríguez - </h4>
                   <h5>Miembro desde 2024</h5>
-               </div>
-                <p class="testimonio-texto"> "Increíble comunidad fitness. No solo es un lugar para ejercitarse, sino para crecer personalmente. Los
+                </div>
+                <p class="testimonio-texto"> "Increíble comunidad fitness. No solo es un lugar para ejercitarse, sino
+                  para crecer personalmente. Los
                   talleres de nutrición fueron un plus que no encontré en otros gimnasios."</p>
-                  
+
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <!--Boton del carrousel-->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <!--Boton del carrousel-->
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      
+
       </div>
 
     </section>
 
+   <!--Footer de la pagina web-->
+  <footer class="bg-dark texto-footer py-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="mb-3">Suscríbete a nuestro Newsletter</h5>
+          <p>Recibe las últimas noticias y actualizaciones directamente en tu bandeja de entrada.</p>
 
-    <!--Footer de la pagina web-->
-    <footer class="bg-dark texto-footer py-1">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-4">
-                  <h5 class="mb-3">Suscríbete a nuestro Newsletter</h5>
-                  <p>Recibe las últimas noticias y actualizaciones directamente en tu bandeja de entrada.</p>
-                  
 
-                  <form id="newsletterForm" class="d-flex">
-                    <input type="email" class="form-control form-control-sm me-2" placeholder="Tu correo electrónico" required>
-                    <button type="submit" class="btn btn-primary btn-sm">Suscribir</button>
-                    <div id="spinner-container" class="ms-2" style="display: none;">
-                        <div class="spinner-border spinner-border-sm text-light" role="status">
-                            <span class="visually-hidden">Cargando...</span>
-                        </div>
-                    </div>
-                    <div id="mensaje-suscripcion" class="ms-2 text-success" style="display: none;">
-                        ¡Suscripción exitosa!
-                    </div>
-                </form>
+          <form id="newsletterForm" class="d-flex">
+            <input type="email" class="form-control form-control-sm me-2" placeholder="Tu correo electrónico" required>
+            <button type="submit" class="btn btn-primary btn-sm">Suscribir</button>
+            <div id="spinner-container" class="ms-2" style="display: none;">
+              <div class="spinner-border spinner-border-sm text-light" role="status">
+                <span class="visually-hidden">Cargando...</span>
               </div>
-              <div class="col-md-4">
-                  <h5 class="mb-3">Síguenos en Redes Sociales</h5>
-                  <ul class="list-unstyled d-flex justify-content-center">
-                      <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-facebook fs-4"></i></a></li>
-                      <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-twitter fs-4"></i></a></li>
-                      <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-instagram fs-4"></i></a></li>
-                      <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-linkedin fs-4"></i></a></li>
-                  </ul>
-              </div>
-              <div class="col-md-4">
-                  <h5 class="mb-3">Ubicación</h5>
-                  <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.2043152548918!2d-58.78885506142281!3d-34.644381793234935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9525fcbe8dd3%3A0xcc8ca2fdcd2a9b41!2sFitness%20Park%20Gym!5e0!3m2!1ses!2sar!4v1743893452495!5m2!1ses!2sar"
-                  width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-          </div>
-          <hr class="text-light mt-4">
-          <div class="row">
-              <div class="col-md-12 text-center">
-                  <p>&copy; 2025 FITTNES PARK. Todos los derechos reservados.</p>
-              </div>
-          </div>
+            </div>
+            <div id="mensaje-suscripcion" class="ms-2 text-success" style="display: none;">
+              ¡Suscripción exitosa!
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-3">Síguenos en Redes Sociales</h5>
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-facebook fs-4"></i></a></li>
+            <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-twitter fs-4"></i></a></li>
+            <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-instagram fs-4"></i></a></li>
+            <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-linkedin fs-4"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-3">Ubicación</h5>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.2043152548918!2d-58.78885506142281!3d-34.644381793234935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9525fcbe8dd3%3A0xcc8ca2fdcd2a9b41!2sFitness%20Park%20Gym!5e0!3m2!1ses!2sar!4v1743893452495!5m2!1ses!2sar"
+            width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
+      <hr class="text-light mt-4">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2025 FITTNES PARK. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
   </footer>
-
 
   </div>
 
@@ -314,6 +387,8 @@
   <script src="js/jquery/personalizado/carousel-testimonio.js"></script>
 
   <script src="js/jquery/personalizado/spinner-newsletter.js"></script>
+  <script src="js/jquery/personalizado/constador-estadisticas.js"></script>
+  <script src="js/jquery/personalizado/video.js"></script>
 </body>
 
 </html>
