@@ -1,13 +1,14 @@
-
-
+/*Estilos del submenu */
 .sub-menu {
     min-width: 550px;
 }
 
+/*Estilos de los enlaces del menu */
 .nav-link{
     color: white;
 }
 
+/*Estilos de los enlaces del menu al pasar el mouse */
 .nav-link:hover{
     color: #f0c14b;
 }
