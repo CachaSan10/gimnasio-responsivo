@@ -7,3 +7,10 @@
 footer{
     margin-top: 20px;
 }
+
+/*Estilos del mapa */
+.mapa{
+    width: 100%;
+    height: 150px;
+    border: 0;
+}
