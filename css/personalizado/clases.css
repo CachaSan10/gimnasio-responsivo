@@ -1,19 +1,22 @@
+/*Estilos de la galeria de clases */ 
 .galeria-clases{
     margin-top:2rem;
 
 }
 
+/*Estilos de los span de las tarjetas de las clases */
 .card-body span{
   margin-top: 0.5rem;
   margin-bottom: 0.8rem;
 }
 
+/*Estilos de las tarjetas de las clases */  
 .card-masonry {
     width: 250px; 
     margin-bottom: 20px;
 }
 
-
+/*Estilos de la imagen con overlay */
 
 
   .item-with-overlay {
@@ -21,6 +24,7 @@
     overflow: hidden;
   }
 
+  /*Estilos del overlay */  
   .overlay {
     position: absolute;
     top: 0;
@@ -38,12 +42,12 @@
     text-align: center;
   }
 
+  /*Estilos del overlay al pasar el mouse */  
   .item-with-overlay:hover .overlay {
     opacity: 1;
   }
 
-
-
+  /*Estilos del texto del overlay */  
   .overlay p {
     margin-bottom: 5px;
   }
@@ -55,28 +59,34 @@
     margin-bottom: 4rem;
 }
 
+/*Estilos de la celda de yoga */
 .color-celda.yoga{
     background-color: #70e28f;
     color: #000000;
     
 }
 
+/*Estilos de la celda de spinning */
 .color-celda.spinning{
     background-color: #efe560;
 }
 
+/*Estilos de la celda de zumba */
 .color-celda.zumba{
     background-color: #f6a2f6;
 }
 
+/*Estilos de la celda de crossfit */
 .color-celda.crossfit{
     background-color: #2cedd0;
 }
+
+/*Estilos de la celda de pilates */
 .color-celda.pilates{
     background-color: #bfc0e3;
 }
 
-
+/*Estilos de la celda de color */
 .color-celda {
     border: 1px solid #000000;
     padding: 6px;
